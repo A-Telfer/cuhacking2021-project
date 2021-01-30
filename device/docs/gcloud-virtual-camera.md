@@ -18,17 +18,14 @@
 5. You should now be able to connect to the instance using the SSH button 
      ![](assets/gcloud-ssh.PNG)
 
-## v4l2loopback
-
-### Setup
+## Setup 
 
 Docs: https://github.com/umlaeute/v4l2loopback
 
-The following should setup 
-
 ```
 sudo apt update
-sudo apt install -y build-essential linux-modules-extra-gcp linux-generic ffmpeg v4l-utils
+sudo apt install -y build-essential linux-modules-extra-gcp linux-generic ffmpeg v4l-utils python3-pip
+sudo -H pip3 install --upgrade youtube-dl
 
 git clone https://github.com/umlaeute/v4l2loopback
 cd v4l2loopback
@@ -39,12 +36,16 @@ sudo modprobe v4l2loopback devices=4
 
 Now running `v4l2-ctl --list-device` should list 4 video devices (ex. /dev/video0)
 
-### Run
+## Run
+Download a video from youtube:
+```
+youtube-dl https://www.youtube.com/watch?v=-1dSY6ZuXEY --output "spooky.%(ext)s"
+```
 
 To run a video as if it's coming from the loopback use:
 
 ```
-ffmpeg -stream_loop -re -i testsrc.avi -f v4l2 /dev/video1
+ffmpeg -stream_loop -1 -re -i spooky.mp4 -f v4l2 /dev/video0
 ```
 
 Replace /dev/video1 with whichever video device you want to use, and testsrc.avi with your video file
