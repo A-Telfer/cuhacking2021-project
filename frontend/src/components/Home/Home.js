@@ -25,7 +25,7 @@ function Home(props) {
   // }
   return (
     <div style={{ marginTop: "30px" }}>
-      <Camera labname="Lab: Carleton 1" title="Camera 1" />
+      <Camera labname="Lab: Carleton 1" title="Camera 1" file="http://104.154.240.223:8080/stream/stream.m3u8"/>
     </div>
   );
 }
