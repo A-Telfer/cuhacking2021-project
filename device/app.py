@@ -14,6 +14,8 @@ def hello():
 
 @app.route('/start_sensor')
 def start_sensor():
+    global ffmpeg_process
+
     # Don't start multiple recordings
     if ffmpeg_process and ffmpeg_process.poll():
         return 
@@ -26,6 +28,8 @@ def start_sensor():
 
 @app.route('/stop_sensor')
 def stop_sensor():
+    global ffmpeg_process 
+    
     if ffmpeg_process and ffmpeg_process.poll():
         os.killpg(os.getpgid(ffmpeg_process.pid), signal.SIGTERM)
 
