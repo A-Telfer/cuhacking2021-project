@@ -2,7 +2,7 @@
 git clone https://github.com/sergey-dryabzhinsky/nginx-rtmp-module.git
 
 # install nginx dependencies
-sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
+sudo apt-get install -y build-essential libpcre3 libpcre3-dev libssl-dev libpng-dev zlib1g-dev
 
 # download nginx
 wget http://nginx.org/download/nginx-1.18.0.tar.gz
