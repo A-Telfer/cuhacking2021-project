@@ -4,7 +4,7 @@ import signal
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='')
 
 ffmpeg_process = None
 
@@ -34,6 +34,21 @@ def stop_sensor():
         ffmpeg_process.wait()
 
     return "This should stop 🛑 the sensor..."
+
+@app.route('/download')
+def download():
+    global ffmpeg_process 
+
+    # do not serve file when recording
+    if ffmpeg_process and not ffmpeg_process.poll():
+        os.kill(ffmpeg_process.pid, 2)
+        ffmpeg_process.wait()
+        return "FFmpeg is still recording!", 500
+
+    if not os.path.exists('output.mkv'):
+        return "No recording found!", 404
+
+    return app.send_static_file('output.mkv')
 
 if __name__=='__main__':
     app.run()
