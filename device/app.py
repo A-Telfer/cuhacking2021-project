@@ -20,7 +20,7 @@ def start_sensor():
     if ffmpeg_process and ffmpeg_process.poll():
         return 
 
-    ffmpeg_process = subprocess.Popen(['ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mkv', '-l'])
+    ffmpeg_process = subprocess.Popen('ffmpeg -y -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mkv'.split(' '), shell=False)
 
     return "This should start the sensor..."
 
@@ -29,9 +29,9 @@ def start_sensor():
 @app.route('/stop_sensor')
 def stop_sensor():
     global ffmpeg_process 
-    
+
     if ffmpeg_process and ffmpeg_process.poll():
-        os.killpg(os.getpgid(ffmpeg_process.pid), signal.SIGTERM)
+        ffmpeg_process.kill()
 
     return "This should stop 🛑 the sensor..."
 
