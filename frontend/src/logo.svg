@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 134.58 222">
+  <defs>
+    <clipPath id="clip-path">
+      <rect y="12.48" width="65.97" height="209" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect x="65.5" y="9.5" width="69.08" height="212.5" fill="none"/>
+    </clipPath>
+  </defs>
+  <path d="M94,93.69c0,8.21-11.88,14.87-26.52,14.87S41,101.9,41,93.69,52.82,78.81,67.47,78.81,94,85.47,94,93.69" fill="#1adcfc"/>
+  <path d="M133.77,189.31c0,15.85-29.55,28.69-66,28.69s-66-12.84-66-28.69,29.55-28.68,66-28.68,66,12.84,66,28.68" fill="#1adcfc"/>
+  <polyline points="132.77 189.31 92.99 93.69 92.99 11.88 39.95 11.88 39.95 93.69 0.77 189.31" fill="#1adcfc"/>
+  <g clip-path="url(#clip-path)">
+    <path d="M69.5,219.28s-75.62-8.47-63.65-37.13L44.1,92.69,43.82,12.5" fill="none" stroke="#c0fcff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  </g>
+  <g clip-path="url(#clip-path-2)">
+    <path d="M69.5,218s71.71-6.19,59.74-34.85L91,93.69l.28-80.19" fill="none" stroke="#16a3b2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+  </g>
+  <path d="M93.08,13.5c0,5.25-11.86,9.5-26.5,9.5s-26.5-4.25-26.5-9.5S51.94,4,66.58,4s26.5,4.25,26.5,9.5" fill="#1adcfc"/>
+  <ellipse cx="66.58" cy="13.5" rx="26.5" ry="9.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="8"/>
+  <polyline points="49.95 76.67 49.95 99.69 40.91 121.75" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="9"/>
+</svg>
