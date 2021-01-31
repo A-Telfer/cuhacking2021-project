@@ -24,26 +24,28 @@ function Home(props) {
   //   props.history.push("/login");
   // }
   return (
-    <div className="col">
-      <div className="row d-flex justify-content-center align-items-start">
-        <Camera
-          title="Camera 1"
-          file="http://104.154.240.223:8080/stream/stream.m3u8"
-        />
-        <Camera
-          title="Camera 2"
-          file="http://104.198.214.215:8080/stream/stream.m3u8"
-        />
-      </div>
-      <div className="row d-flex justify-content-center align-items-start">
-        <Camera
-          title="Camera 3"
-          file="http://104.154.240.223:8080/stream/stream.m3u8"
-        />
-        <Camera
-          title="Camera 4"
-          file="http://104.198.214.215:8080/stream/stream.m3u8"
-        />
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <Camera
+            title="Camera 1"
+            file="http://104.154.240.223:8080/stream/stream.m3u8"
+          />
+          <Camera
+            title="Camera 2"
+            file="http://104.198.214.215:8080/stream/stream.m3u8"
+          />
+        </div>
+        <div className="col">
+          <Camera
+            title="Camera 3"
+            file="http://104.154.240.223:8080/stream/stream.m3u8"
+          />
+          <Camera
+            title="Camera 4"
+            file="http://104.198.214.215:8080/stream/stream.m3u8"
+          />
+        </div>
       </div>
     </div>
   );
