@@ -2,30 +2,6 @@ import React from "react";
 
 const About = () => {
   return (
-    // <div class="container jumbotron">
-    //   <div class="row">
-    //     <div class="col">1 of 2</div>
-    //     <div class="col">2 of 2</div>
-    //   </div>
-    // </div>
-    // <div class="jumbotron">
-    //     <div class="container-fluid padding">
-    //         <div class="row welcome text-center">
-    //             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-    //                 <h1 class="display-4" id="jbheading">#AboutMe</h1>
-    //             </div>
-    //             <hr />
-    //             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-    //                 <p class="lead">
-    //                     Apart from clicking, I'm involved in almost every other pass-time, ranging from sports to
-    //                     instrumental music playing. I love to play piano, volleyball, table-tennis, basketball and with
-    //                     web-designing. Light instrumental-soundtrack, a large ice-coffee, a pack of doritos, my PC, and
-    //                     WI-FI is no less than heaven.
-    //                 </p>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
     <div>
       <div className="jumbotron">
         <div className="row align-items-center">

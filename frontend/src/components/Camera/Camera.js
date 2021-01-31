@@ -24,7 +24,7 @@ class Camera extends React.Component {
       ],
     };
     return (
-      <div>
+      <div style={{margin: '10px'}}>
         <div className="card" style={{ width: "31rem" }}>
           <div className="card-body">
             <h1 className="card-title">{this.props.labname}</h1>
