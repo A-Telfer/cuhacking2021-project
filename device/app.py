@@ -17,21 +17,19 @@ def start_sensor():
     global ffmpeg_process
 
     # Don't start multiple recordings
-    if ffmpeg_process and ffmpeg_process.poll():
+    if ffmpeg_process and not ffmpeg_process.poll():
         return 
 
     ffmpeg_process = subprocess.Popen('ffmpeg -y -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mkv'.split(' '), shell=False)
 
     return "This should start the sensor..."
 
-    
-
 @app.route('/stop_sensor')
 def stop_sensor():
     global ffmpeg_process 
 
-    if ffmpeg_process and ffmpeg_process.poll():
-        ffmpeg_process.kill()
+    if ffmpeg_process and not ffmpeg_process.poll():
+        ffmpeg_process.wait()
 
     return "This should stop 🛑 the sensor..."
 
