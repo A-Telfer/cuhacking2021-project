@@ -39,11 +39,10 @@ class Camera extends React.Component {
       <div style={{margin: '10px'}}>
         <div className="card" style={{ width: "31rem" }}>
           <div className="card-body">
-            <h1 className="card-title">{this.props.labname}</h1>
-            <br />
+            {/* <h1 className="card-title">{this.props.labname}</h1> */}
+            {/* <br /> */}
             <h4 className="card-text float-left">{this.props.title}</h4>
-          </div>
-          <div style={{ position: "absolute", top: "103px", right: "20px" }}>
+            <div style={{ position: "absolute", top: "23px", right: "20px" }}>
             <ToggleButton
               selected={selected}
               toggleSelected={() => {
@@ -52,6 +51,8 @@ class Camera extends React.Component {
               }}
             />
           </div>
+          </div>
+          
           {selected ? (
             <div>
               <VideoPlayer {...videoJsOptions} />
