@@ -24,32 +24,29 @@ class Camera extends React.Component {
       ],
     };
     return (
-      <div>
-        <h1 style={{ position: "absolute" }}>{this.props.labname}</h1>
-        <h4 style={{ float: "left", marginTop: "73px" }}>
-          {this.props.title}
-        </h4>
-        <div
-          style={{
-            position: "absolute",
-            marginLeft: "200px",
-            marginTop: "70px",
-          }}
-        >
-          <ToggleButton
-            selected={selected}
-            toggleSelected={() => {
-              this.setState({ selected: !selected });
-            }}
-          />
-        </div>
-        {selected ? (
-          <div className="screen">
-            <VideoPlayer {...videoJsOptions} />
+      <div style={{margin: '10px'}}>
+        <div className="card" style={{ width: "31rem" }}>
+          <div className="card-body">
+            <h1 className="card-title">{this.props.labname}</h1>
+            <br />
+            <h4 className="card-text float-left">{this.props.title}</h4>
           </div>
-        ) : (
-          <div></div>
-        )}
+          <div style={{ position: "absolute", top: "103px", right: "20px" }}>
+            <ToggleButton
+              selected={selected}
+              toggleSelected={() => {
+                this.setState({ selected: !selected });
+              }}
+            />
+          </div>
+          {selected ? (
+            <div>
+              <VideoPlayer {...videoJsOptions} />
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
       </div>
     );
   }

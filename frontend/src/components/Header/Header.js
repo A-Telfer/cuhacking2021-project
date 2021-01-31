@@ -34,10 +34,10 @@ function Header(props) {
       <div className="row col-12 align-middle text-white">
         <img src={logo} alt="logo" height="50vh" />
         <a
-          href="/home"
+          href="/"
           style={{
             marginTop: "12px",
-            marginLeft: "20px",
+            marginLeft: "40px",
             textDecoration: "none",
           }}
           className="h5"
@@ -47,7 +47,8 @@ function Header(props) {
         <a
           href="/about"
           style={{
-            margin: "12px",
+            marginTop: "12px",
+            marginLeft: '40px',
             textDecoration: "none",
           }}
           className="h5"
