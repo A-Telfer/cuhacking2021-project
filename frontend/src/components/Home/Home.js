@@ -24,7 +24,13 @@ function Home(props) {
   //   props.history.push("/login");
   // }
   return (
+
     <div className="container">
+      <div className="row d-flex justify-content-end">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            {/* <button type="button" class="btn btn-secondary float-right">Record</button> */}
+        </div>
+      </div>
       <div className="row">
         <div className="col">
           <Camera
