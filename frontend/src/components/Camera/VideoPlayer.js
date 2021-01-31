@@ -1,18 +1,18 @@
-import React from 'react';
-import videojs from 'video.js'
+import React from "react";
+import videojs from "video.js";
 
 class VideoPlayer extends React.Component {
   componentDidMount() {
     // instantiate Video.js
     this.player = videojs(this.videoNode, this.props, function onPlayerReady() {
-      console.log('onPlayerReady', this)
+      console.log("onPlayerReady", this);
     });
   }
 
   // destroy player on unmount
   componentWillUnmount() {
     if (this.player) {
-      this.player.dispose()
+      this.player.dispose();
     }
   }
 
@@ -21,10 +21,13 @@ class VideoPlayer extends React.Component {
   // see https://github.com/videojs/video.js/pull/3856
   render() {
     return (
-        <div style={{paddingTop: '150px'}}>
-          <video ref={ node => this.videoNode = node } className="video-js"></video>
-        </div>
-    )
+      <div className="d-flex p-2">
+        <video
+          ref={(node) => (this.videoNode = node)}
+          className="video-js"
+        ></video>
+      </div>
+    );
   }
 }
 

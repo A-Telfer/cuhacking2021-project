@@ -15,29 +15,30 @@ function App() {
     <Router>
       <div className="App">
         <Header title={title} />
-        <div className="container d-flex">
+        <div style={{margin: '30px'}}>
           <Switch>
             <Route path="/" exact>
+              {/* <RegistrationForm
+                showError={updateErrorMessage}
+                updateTitle={updateTitle}
+              /> */}
+              <Home />
+            </Route>
+            {/* <Route path="/register">
               <RegistrationForm
                 showError={updateErrorMessage}
                 updateTitle={updateTitle}
               />
-            </Route>
-            <Route path="/register">
-              <RegistrationForm
-                showError={updateErrorMessage}
-                updateTitle={updateTitle}
-              />
-            </Route>
-            <Route path="/login">
+            </Route> */}
+            {/* <Route path="/login">
               <LoginForm
                 showError={updateErrorMessage}
                 updateTitle={updateTitle}
               />
-            </Route>
-            <Route path="/home">
+            </Route> */}
+            {/* <Route path="/home">
               <Home />
-            </Route>
+            </Route> */}
             <Route path="/about">
               <About />
             </Route>
