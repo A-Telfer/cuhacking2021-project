@@ -3,7 +3,7 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 import file from "../../../src/file.mp4";
 import VideoPlayer from "./VideoPlayer.js";
 
-let startStop = isStart => fetch(`http://localhost:5000/${isStart ? 'start_sensor' : 'stop_sensor'}`)
+let startStop = isStart => fetch(`http://104.198.214.215:5000/${isStart ? 'start_sensor' : 'stop_sensor'}`)
   .then(response => {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' + response.status);
