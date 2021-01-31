@@ -21,11 +21,9 @@ class VideoPlayer extends React.Component {
   // see https://github.com/videojs/video.js/pull/3856
   render() {
     return (
-      <div>	
-        <div data-vjs-player>
+        <div style={{paddingTop: '150px'}}>
           <video ref={ node => this.videoNode = node } className="video-js"></video>
         </div>
-      </div>
     )
   }
 }
