@@ -3,6 +3,18 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 import file from "../../../src/file.mp4";
 import VideoPlayer from "./VideoPlayer.js";
 
+let startStop = isStart => fetch(`http://localhost:5000/${isStart ? 'start_sensor' : 'stop_sensor'}`)
+  .then(response => {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' + response.status);
+        return;
+      }
+      // Examine the text in the response
+      response.json().then(data => console.log(data));
+    }
+  )
+  .catch(err => console.log('Fetch Error :-S', err));
+
 class Camera extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +47,7 @@ class Camera extends React.Component {
             <ToggleButton
               selected={selected}
               toggleSelected={() => {
+                startStop(!selected);
                 this.setState({ selected: !selected });
               }}
             />
