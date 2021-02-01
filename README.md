@@ -55,7 +55,7 @@ This repository is currently in a proof-of-concept state as raise awareness in o
 - Flask API End Points to Start, Stop, and Download Data from Sensor Managers
 - React Frontend
 
-![](C:\Users\Owner\Documents\repos\cuhacking2021-project\docs\assets\hackathon-demo.gif)
+![](docs/assets/hackathon-demo.gif)
 
 ### Future Work
 
