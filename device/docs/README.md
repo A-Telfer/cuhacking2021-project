@@ -1,1 +1,0 @@
-# Extended Device Documentation
