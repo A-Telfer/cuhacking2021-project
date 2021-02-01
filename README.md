@@ -34,7 +34,7 @@ As the use of machine-learning and data-driven analysis has risen in the life-sc
 
 ## System 
 
-![](docs/assets/system-graphic.svg)
+![](docs/assets/system-graphic.png)
 
 An uncluttered system that lets authenticated users view and record data from anywhere. 
 
