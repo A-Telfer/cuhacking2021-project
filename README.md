@@ -65,7 +65,7 @@ We are actively seeking to connect with labs to gather feedback and designs to m
 
 The next stage of this project will be directed to gauging community interest, gathering feedback, redesigning the UI workflows and backend systems to fully realize the goals set out in the introduction.
 
-![](docs/assets/demo-ui.png)
+![](docs/assets/demo-ui.PNG)
 
 ## Authors
 
