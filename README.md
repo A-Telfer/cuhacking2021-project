@@ -1,4 +1,4 @@
-# Just Another Open Lab
+# Just Another OpenLab
 
 An open-source data collection tool designed to meet the evolving challenges of data-driven analysis in life-science research.
 
@@ -48,8 +48,8 @@ An uncluttered system that lets authenticated users view and record data from an
 
 This repository is currently in a proof-of-concept state as raise awareness in order to access interest and seek feedback for future development. 
 
-### PoC Work
-
+### Proof of Concept Work
+A prototype was developed at cuhacking2021 that demonstrated several of the core features. 
 - RTMP Video Streaming from Sensor Managers using FFmpeg and NGINX 
 - Local Data Storage
 - Flask API End Points to Start, Stop, and Download Data from Sensor Managers
