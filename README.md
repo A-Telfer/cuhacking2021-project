@@ -61,7 +61,7 @@ A prototype was developed at cuhacking2021 that demonstrated several of the core
 
 Are you a researcher? We want to connect with you. 
 
-We are actively seeking to connect with labs to gather feedback and designs to maximize the usefulness of this project for your lab.
+We are actively seeking to connect with labs to gather feedback and designs to maximize the usefulness of this project. 
 
 The next stage of this project will be directed to gauging community interest, gathering feedback, redesigning the UI workflows and backend systems to fully realize the goals set out in the introduction.
 
