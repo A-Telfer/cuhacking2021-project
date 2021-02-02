@@ -14,13 +14,13 @@ As the use of machine-learning and data-driven analysis has risen in the life-sc
 
    Traditionally, analysis of experimental data has often performed manually using data collected from few devices. However increasingly advanced machine-learning models allow and often require data from more sources. In animal-models, a growing number of open-source projects like [DeepLabCut](http://www.mousemotorlab.org/deeplabcut), [SiMBA](https://github.com/DeepLabCut/DeepLabCut), and [DeepSqueak](https://github.com/DrCoffey/DeepSqueak) are capable of consuming multiple types of data from multiple sources. This revolution in data-analysis is driving new types of research and is becoming increasingly deployed and relied on by groups around the world. However many labs struggle to adapt to new data collection requirements such as simultaneous collection from multiple cameras as well as other sources such as audio and EM signals. 
 
-   This project creates a synchronized data collection framework that can connect to any device capable of providing a data-stream. It provides web-access, which allows remote live-data viewing and control from authenticated users.
+   This project creates a synchronized data collection framework that can connect to any device capable of providing a data-stream. It provides web-access in order to allow remote live-data viewing and control.
 
 2. **Reproducibility**: improved internal experiment documentation and packaging that encourages open-data practices.
 
    Recent meta-research articles on scientific reproducibility have repeatedly singled out life-science domains as being acutely impacted. This project provides a streamlined interface to create structed experimental data and metadata in order to:
 
-   - Improve reproducibility by preventing the loss of important information caused by researchers leaving the team, time-drift of experimental practice, and simple forgetfulness. 
+   - Improve reproducibility by preventing the loss of important information caused by researchers leaving the team, time-drift of experimental practice, and separation/loss of experiment variables. 
    - Passively encourage data sharing by storing data in popular open-data formats. 
 
 3. **Long Term Usage**: maintainability and scaling.
@@ -46,7 +46,7 @@ An uncluttered system that lets authenticated users view and record data from an
 
 ## Development State
 
-This repository is currently in a proof-of-concept state as raise awareness in order to access interest and seek feedback for future development. 
+This repository is currently in a proof-of-concept state as we raise awareness in order to access interest and seek feedback for future development. 
 
 ### Proof of Concept Work
 A prototype was developed at cuhacking2021 that demonstrated several of the core features. 
