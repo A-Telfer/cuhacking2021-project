@@ -1,4 +1,4 @@
-# Just Another OpenLab
+# Yet Another OpenLab
 
 An open-source data collection tool designed to meet the evolving challenges of data-driven analysis in life-science research.
 
